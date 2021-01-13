@@ -16,7 +16,15 @@
     <div>
         <div id="app">
             <div id="nologin" v-if="!loggedin"> 
-                <h1>This is the login area</h1>
+            <div id="loginform"> 
+                <fieldset>
+                    <legend>
+                        Login
+                    </legend>
+                    <input type="text" placeholder="username" v-model="createUN"> 
+                    <input type="password" placeholder="password" v-model="createPW">
+                    <button>login</button>
+                </fieldset>
             </div>
             <div id="login" v-if="loggedin">
                 <h1>This is the user area</h1>

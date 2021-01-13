@@ -3,5 +3,7 @@ const app = new Vue ({
     data : {
         loggedin: false,
         JWT: "",
+        createUN: "", 
+        createPW: "",
     }
 })
